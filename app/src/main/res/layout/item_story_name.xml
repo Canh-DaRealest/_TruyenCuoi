@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/clickitem"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/tablerow_item_story_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/funny_icon" />
+
+        <TextView
+            android:lineSpacingExtra="2sp"
+            android:maxLines="2"
+            android:lines="2"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="end"
+            android:id="@+id/tv_item_story_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginVertical="15dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Tam Quốc Chế"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/red">
+
+        <LinearLayout
+            android:id="@+id/ln_header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/bg_title_app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingVertical="5dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:text="Truyện cười\n🙂😳😂🤣😆"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ln_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingVertical="10dp">
+
+
+        <Button
+            android:id="@+id/tv_yeuthich"
+            style="@style/button"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_baseline_favorite_24"
+            android:text="Các truyện đã thích"
+            android:textSize="20sp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:mrl_rippleColor="@color/gray_light"
+            app:mrl_rippleDuration="200"
+            app:mrl_rippleFadeDuration="75">
+
+            <TextView
+                android:id="@+id/tv_setting"
+                style="@style/button"
+                android:drawableLeft="@drawable/ic_settings_24"
+                android:paddingHorizontal="15dp"
+                android:text="Cài đặt" />
+
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:mrl_rippleColor="@color/gray_light"
+            app:mrl_rippleDuration="300"
+            app:mrl_rippleFadeDuration="75">
+
+            <TextView
+                android:id="@+id/tv_info"
+                style="@style/button"
+                android:drawableLeft="@drawable/ic_info24"
+                android:paddingHorizontal="15dp"
+                android:text="Thông tin ứng dụng" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            app:mrl_rippleColor="@color/gray_light"
+            app:mrl_rippleDuration="300"
+            app:mrl_rippleFadeDuration="100">
+
+            <TextView
+                android:id="@+id/tv_other_app"
+                style="@style/button"
+                android:drawableLeft="@drawable/ic_get_app_24"
+                android:paddingHorizontal="15dp"
+                android:text="Ứng dụng khác" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            app:mrl_rippleColor="@color/gray_light"
+            app:mrl_rippleDuration="300"
+            app:mrl_rippleFadeDuration="100">
+
+            <TextView
+                android:id="@+id/tv_rate"
+                style="@style/button"
+                android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+                android:paddingHorizontal="15dp"
+                android:text="Đánh giá ứng dụng" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            app:mrl_rippleColor="@color/gray_light"
+            app:mrl_rippleDuration="300"
+            app:mrl_rippleFadeDuration="100">
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/button"
+                android:drawableLeft="@drawable/ic_baseline_error_24"
+                android:paddingHorizontal="15dp"
+                android:text="Báo cáo lỗi" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:mrl_rippleColor="@color/gray_light"
+            app:mrl_rippleDuration="300"
+            app:mrl_rippleFadeDuration="100">
+
+            <TextView
+                android:id="@+id/tv_share"
+                style="@style/button"
+                android:drawableStart="@drawable/ic_share_24"
+                android:paddingHorizontal="15dp"
+                android:text="Chia sẻ ứng dụng" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

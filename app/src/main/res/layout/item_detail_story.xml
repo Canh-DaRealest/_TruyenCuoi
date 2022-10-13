@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_detai_story"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:id="@+id/iv_favourite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/notlike"
+            app:tint="@color/redligh" />
+
+        <ImageView
+            android:id="@+id/iv_share_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_share_24"
+            app:tint="@color/black" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_story_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Tam Quốc Chế"
+        android:textColor="@color/blue"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv_scrollview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="true"
+        android:scrollbarFadeDuration="@integer/material_motion_duration_medium_2"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="15dp"
+                android:text="da2lanroi"
+                android:textColor="@color/black"
+                android:textSize="16sp">
+
+            </TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
