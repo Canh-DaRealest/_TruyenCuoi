@@ -16,9 +16,8 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
-import com.example.truyencuoi.R;
 
 import java.util.List;
 

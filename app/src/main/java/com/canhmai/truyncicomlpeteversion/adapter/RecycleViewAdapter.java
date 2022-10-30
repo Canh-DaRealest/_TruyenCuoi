@@ -13,9 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.db.entity.Category;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
-import com.example.truyencuoi.R;
 
 import java.util.ArrayList;
 import java.util.List;

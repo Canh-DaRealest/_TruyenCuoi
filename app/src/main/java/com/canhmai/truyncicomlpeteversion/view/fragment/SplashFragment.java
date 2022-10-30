@@ -4,11 +4,10 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
+import com.canhmai.truyncicomlpeteversion.databinding.SplashFragmentBinding;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.CommonViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.SplashFragmentBinding;
 
 public class SplashFragment extends BaseFragment<SplashFragmentBinding, CommonViewModel> {
     public static final String TAG = SplashFragment.class.getName();

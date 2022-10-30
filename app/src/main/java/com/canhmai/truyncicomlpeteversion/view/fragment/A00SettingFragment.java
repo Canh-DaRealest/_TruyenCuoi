@@ -14,16 +14,15 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import com.canhmai.truyncicomlpeteversion.App;
 import com.canhmai.truyncicomlpeteversion.MySharePreference;
-
+import com.canhmai.truyncicomlpeteversion.R;
+import com.canhmai.truyncicomlpeteversion.databinding.A00SettingfragmentBinding;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.MainViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.A00SettingfragmentBinding;
 
 import java.util.List;
 
-public class A00SettingFragment extends BaseFragment<A00SettingfragmentBinding, MainViewModel> {
+public class A00SettingFragment extends BaseFragment<com.canhmai.truyncicomlpeteversion.databinding.A00SettingfragmentBinding, MainViewModel> {
     public static final String TAG = A00SettingFragment.class.getName();
 
     private List<Story> storyList;

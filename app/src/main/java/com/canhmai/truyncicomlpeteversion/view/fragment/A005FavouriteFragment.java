@@ -8,14 +8,12 @@ import androidx.appcompat.widget.SearchView;
 import androidx.lifecycle.Observer;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.adapter.Tab2RecycleViewAdapter;
-
+import com.canhmai.truyncicomlpeteversion.databinding.A005FavouriteFragmentBinding;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.CommonViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.A005FavouriteFragmentBinding;
 
 public class A005FavouriteFragment extends BaseFragment<A005FavouriteFragmentBinding, CommonViewModel> {
     public static final String TAG = A005FavouriteFragment.class.getName();

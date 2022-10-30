@@ -9,15 +9,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.adapter.DetailAdpater;
 import com.canhmai.truyncicomlpeteversion.adapter.RecycleViewAdapter;
-
+import com.canhmai.truyncicomlpeteversion.databinding.A003DetailFragmentBinding;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.MainViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.A003DetailFragmentBinding;
 
 import java.util.List;
 

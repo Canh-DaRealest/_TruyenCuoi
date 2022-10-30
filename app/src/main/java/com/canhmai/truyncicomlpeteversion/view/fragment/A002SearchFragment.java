@@ -15,16 +15,14 @@ import androidx.appcompat.widget.SearchView;
 import androidx.lifecycle.Observer;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.adapter.MainRecycleViewAdapter;
 import com.canhmai.truyncicomlpeteversion.adapter.MainRecycleViewAdapterHorizontal;
-
+import com.canhmai.truyncicomlpeteversion.databinding.A002SearchFragmentBinding;
 import com.canhmai.truyncicomlpeteversion.db.entity.Category;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.MainViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.A002SearchFragmentBinding;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -63,7 +61,7 @@ public class A002SearchFragment extends BaseFragment<A002SearchFragmentBinding, 
     private void showSearchView() {
         mBinding.includeDetailActionBar.searchview.setIconifiedByDefault(true);
         mBinding.includeDetailActionBar.searchview.setFocusable(true);
-        mBinding.includeDetailActionBar.searchview.requestFocusFromTouch();
+      //  mBinding.includeDetailActionBar.searchview.requestFocusFromTouch();
         mBinding.includeDetailActionBar.searchview.setIconified(false);
 
         mBinding.includeDetailActionBar.searchview.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {

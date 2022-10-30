@@ -6,11 +6,12 @@ import androidx.fragment.app.Fragment;
 
 import com.canhmai.truyncicomlpeteversion.App;
 import com.canhmai.truyncicomlpeteversion.MySharePreference;
-
+import com.canhmai.truyncicomlpeteversion.R;
+import com.canhmai.truyncicomlpeteversion.databinding.ActivityMainBinding;
+import com.canhmai.truyncicomlpeteversion.view.fragment.A003DetailFragment;
+import com.canhmai.truyncicomlpeteversion.view.fragment.A001MainFragment;
 import com.canhmai.truyncicomlpeteversion.view.fragment.SplashFragment;
 import com.canhmai.truyncicomlpeteversion.viewmodel.CommonViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 

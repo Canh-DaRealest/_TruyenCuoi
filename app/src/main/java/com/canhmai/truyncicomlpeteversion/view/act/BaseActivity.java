@@ -13,10 +13,9 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewbinding.ViewBinding;
 
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.callback.OnMainCallBack;
 import com.canhmai.truyncicomlpeteversion.view.fragment.BaseFragment;
-import com.example.truyencuoi.R;
 
 public abstract class BaseActivity<T extends ViewBinding, V extends ViewModel> extends AppCompatActivity implements OnMainCallBack, View.OnClickListener {
     protected T binding;

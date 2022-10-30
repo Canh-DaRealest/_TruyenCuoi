@@ -20,16 +20,14 @@ import androidx.core.view.GravityCompat;
 import androidx.lifecycle.Observer;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.adapter.MainRecycleViewAdapter;
 import com.canhmai.truyncicomlpeteversion.adapter.MainRecycleViewAdapterHorizontal;
-
+import com.canhmai.truyncicomlpeteversion.databinding.A001MainFramentBinding;
 import com.canhmai.truyncicomlpeteversion.db.entity.Category;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.MainViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.A001MainFramentBinding;
 
 import java.io.IOException;
 import java.io.InputStream;

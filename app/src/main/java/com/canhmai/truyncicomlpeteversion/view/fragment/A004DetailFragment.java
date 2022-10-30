@@ -6,13 +6,11 @@ import android.view.View;
 import androidx.viewpager.widget.ViewPager;
 
 import com.canhmai.truyncicomlpeteversion.App;
-
+import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.adapter.DetailAdpater;
-
+import com.canhmai.truyncicomlpeteversion.databinding.A004DetailFragmentBinding;
 import com.canhmai.truyncicomlpeteversion.view.act.MainActivity;
 import com.canhmai.truyncicomlpeteversion.viewmodel.MainViewModel;
-import com.example.truyencuoi.R;
-import com.example.truyencuoi.databinding.A004DetailFragmentBinding;
 
 public class A004DetailFragment extends BaseFragment<A004DetailFragmentBinding, MainViewModel> {
     public static final String TAG = A004DetailFragment.class.getName();
