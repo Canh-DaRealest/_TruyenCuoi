@@ -40,9 +40,9 @@ public class A005FavouriteFragment extends BaseFragment<A005FavouriteFragmentBin
             @Override
             public void onChanged(Story story) {
                 if (story != null) {
-                    story.isFavourite = 0;
-                    App.getInstance().getAppDB().getStoriesDAO().updateStory(story);
+                    story.isFavourite = 0;    App.getInstance().getAppDB().getStoriesDAO().updateStory(story);
                     App.getInstance().getStorage().listFavouriteStory.remove(story);
+
                     mBinding.includeFavourite.tvCountStory.setText(App.getInstance().getStorage().listFavouriteStory.size() + "");
                     updateAdapter();
 

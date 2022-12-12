@@ -23,7 +23,7 @@
                 android:id="@+id/includeMainActionBar"
                 layout="@layout/item_main_action_bar" />
 
-            <ScrollView
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -34,56 +34,47 @@
                     android:orientation="vertical">
 
 
-                    <LinearLayout
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="6dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Đọc truyện ngẫu nhiên"
+                        android:textColor="@color/red_mid"
+                        android:textStyle="bold" />
 
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_horizlotal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:elevation="6dp"
-                            android:fontFamily="sans-serif-light"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="Đọc truyện ngẫu nhiên"
-                            android:textColor="@color/red_mid"
-                            android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_main_detail_story" />
 
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerview_horizlotal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                            tools:listitem="@layout/item_main_detail_story" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:elevation="6dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Tìm truyện theo kí tự đầu"
+                        android:textColor="@color/red_mid"
+                        android:textStyle="bold" />
 
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginVertical="5dp"
-                            android:elevation="6dp"
-                            android:fontFamily="sans-serif-light"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="Tìm truyện theo kí tự đầu"
-                            android:textColor="@color/red_mid"
-                            android:textStyle="bold" />
-
-                        <LinearLayout
-                            android:id="@+id/ln_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:background="@color/gray_light"
-                            android:orientation="vertical"
-                            android:padding="5dp" />
-
-
-                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ln_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/gray_light"
+                        android:orientation="vertical"
+                        android:padding="5dp" />
 
                     <TextView
                         android:id="@+id/topic"
@@ -100,23 +91,15 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerview_vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="450dp"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:layout_height="match_parent"
                         tools:listitem="@layout/item_topic">
 
 
                     </androidx.recyclerview.widget.RecyclerView>
 
-
-                    <LinearLayout
-                        android:id="@+id/ln_add_topic"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" />
-
                 </LinearLayout>
 
-            </ScrollView>
+            </androidx.core.widget.NestedScrollView>
 
 
         </LinearLayout>
@@ -133,15 +116,4 @@
 
 </LinearLayout>
 
-    <!--<ScrollView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:background="@color/gray_light">-->
 
-    <!--<LinearLayout-->
-    <!--    android:id="@+id/ln_topic"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:background="@color/gray_light"-->
-    <!--    android:orientation="vertical" />-->
-    <!--</ScrollView>-->

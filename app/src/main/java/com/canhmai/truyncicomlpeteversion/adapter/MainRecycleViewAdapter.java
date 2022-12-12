@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.db.entity.Category;
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,8 +56,8 @@ public class MainRecycleViewAdapter extends RecyclerView.Adapter<MainRecycleView
         Category story = storyList.get(position);
         holder.image.setImageBitmap(story.getImage());
         holder.textView.setText(story.getName());
-        holder.tableRow.setTag(story.getName());
-        holder.tableRow.setBackgroundResource(R.drawable.clickitem);
+        holder.materialCardView.setTag(story.getName());
+
     }
 
 
@@ -98,19 +98,19 @@ public class MainRecycleViewAdapter extends RecyclerView.Adapter<MainRecycleView
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TableRow tableRow;
+        MaterialCardView materialCardView;
         TextView textView;
         ImageView image;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tableRow = itemView.findViewById(R.id.tr_category);
+            materialCardView = itemView.findViewById(R.id.tr_category);
             textView = itemView.findViewById(R.id.tv_categories);
             image = itemView.findViewById(R.id.iv_photo);
-            tableRow.setOnClickListener(new View.OnClickListener() {
+            materialCardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ClickItemView((String) tableRow.getTag());
+                    ClickItemView((String) materialCardView.getTag());
                 }
             });
 

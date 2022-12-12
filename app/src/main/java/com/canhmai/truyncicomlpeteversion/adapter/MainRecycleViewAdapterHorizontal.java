@@ -3,7 +3,6 @@ package com.canhmai.truyncicomlpeteversion.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.canhmai.truyncicomlpeteversion.R;
 import com.canhmai.truyncicomlpeteversion.db.entity.Story;
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
@@ -47,7 +47,7 @@ public class MainRecycleViewAdapterHorizontal extends RecyclerView.Adapter<MainR
         Story story = storyList.get(position);
         holder.name.setText(story.getName());
         holder.content.setText(story.getContent());
-        holder.ln_detail.setTag(story);
+        holder.materialCardView.setTag(story);
     }
 
 
@@ -57,19 +57,19 @@ public class MainRecycleViewAdapterHorizontal extends RecyclerView.Adapter<MainR
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private final LinearLayout ln_detail;
+        private final MaterialCardView materialCardView;
         private final TextView name;
         private final TextView content;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            ln_detail = itemView.findViewById(R.id.ln_detail);
+            materialCardView = itemView.findViewById(R.id.material_carview_hr);
             name = itemView.findViewById(R.id.tv_story_name_main);
             content = itemView.findViewById(R.id.tv_detail_main);
-            ln_detail.setOnClickListener(new View.OnClickListener() {
+            materialCardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ClickItemView((Story) ln_detail.getTag());
+                    ClickItemView((Story) materialCardView.getTag());
                 }
             });
 

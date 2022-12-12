@@ -18,6 +18,9 @@ import android.widget.Toast;
 
 import androidx.core.view.GravityCompat;
 import androidx.lifecycle.Observer;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.canhmai.truyncicomlpeteversion.App;
 import com.canhmai.truyncicomlpeteversion.R;
@@ -45,8 +48,8 @@ public class A001MainFragment extends BaseFragment<A001MainFramentBinding, MainV
         // checkNighMode();
         intiUI();
         App.getInstance().getStorage().categoryList = new ArrayList<>();
-       addCategories();
-       // initPhotosTopics();
+        addCategories();
+        // initPhotosTopics();
         MainActivity mainActivity = (MainActivity) mContext;
         mainActivity.getWindow().setStatusBarColor(getResources().getColor(R.color.red));
 
@@ -252,6 +255,9 @@ public class A001MainFragment extends BaseFragment<A001MainFramentBinding, MainV
                 onMainCallBack.showFragment(A003DetailFragment.TAG, null, true, false);
             }
         });
+        mBinding.recyclerviewVertical.setLayoutManager(new GridLayoutManager(mContext, 2));
+        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(mContext, DividerItemDecoration.VERTICAL);
+        mBinding.recyclerviewVertical.addItemDecoration(itemDecoration);
         mBinding.recyclerviewVertical.setAdapter(mainRecycleViewAdapter);
 
     }
@@ -266,13 +272,13 @@ public class A001MainFragment extends BaseFragment<A001MainFramentBinding, MainV
 
     private void initPhotosTopics() {
         //asset manager giups chungs ta truy cap den thu muc asset
-       assetManager = requireActivity().getAssets();
+        assetManager = requireActivity().getAssets();
 
         try {
             //.list: lay duoc danh sach duong dan anh
             String[] listFileName = assetManager.list("photo/");
 
-            mBinding.lnAddTopic.removeAllViews(); //xóa hết các view cũ có trước đó
+           // mBinding.lnAddTopic.removeAllViews(); //xóa hết các view cũ có trước đó
             for (String photoPath : listFileName
             ) {
                 //ánh xạ layout item_topic ra code(lôi ra)
@@ -294,7 +300,7 @@ public class A001MainFragment extends BaseFragment<A001MainFramentBinding, MainV
                 itemView.setTag(tvName.getText().toString());
                 itemView.setOnClickListener(v -> openTopic(v));
                 //thêm vào ln layout
-               mBinding.lnAddTopic.addView(itemView);
+             //   mBinding.lnAddTopic.addView(itemView);
             }
         } catch (Exception e) {
             e.printStackTrace();
